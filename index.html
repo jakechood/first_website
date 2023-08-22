@@ -13,10 +13,12 @@
 			<meta http-equiv="X-UA-Compatible" content="IT-edge" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<!-- URL Title -->
-			<title>Jake Sturgill</title>
-		<!-- Pag Title -->
-		<h1> Jake Sturgill</h1>
-		<p>Software Engineer | Artist </p>
+			<div align="center">
+				<title>Jake Sturgill</title>
+				<!-- Pag Title -->
+				<h1> Jake Sturgill</h1>
+				<p>Software Engineer | Artist | Retired Teaher</p>
+			</div>
 	</head>
 </html>
 <html>
@@ -24,31 +26,16 @@
 	<head>
 		<!-- CSS for the body of the page -->
 		<style>
-			body {
-				padding: 25px;
-				background-color: #121212;
-				color: #ffffff;
-				font-size: 20px
-				}
-
-			.dark-mode {
-				background-color: #121212;
-				color: #ffffff
-				}
-
-			.light-mode {
-				background-color: #ffffff;
-				color: #121212
-				}
+			
 		</style>
-		<!-- Close Heading -->
+		<!-- Close CSS for body of page -->
 
 
 		<!-- Set body -->
 		<body>
 			<!-- Set Navigation -->
 			<nav>
-				<div id="menu"; align-content = "middle">
+				<div id="menu"; align="center">
 					<!--Add Navigational Links and Names-->
 					<a href="index.html">Home</a>
 					<a href="gallery.html">Image Gallery</a>
@@ -68,7 +55,9 @@
 					<!--Close Heading 1-->
 					</h1>
 				<!--Add Image-->
-					<img src="Edge Profile Picture.png" width="50%">
+					<div align="center">
+						<img id ="jakeprofpic"; src="Edge Profile Picture.png" width="50%";>
+					</div>
 					<p>Hello, World!</p>
 					<script type="text/javascript" src="index.js"></script>
 				</div>
@@ -77,13 +66,13 @@
 				<div>
 				<h3> Thank you for your interest!</h3>
 				<h4> Please feel welcome to sign up for updates as they occur!</h4>
-					<input type="text" placeholder = "Enter username">
-					<input type="password" placeholder= "Enter password">
-					<input type="password" placeholder = "Please confirm password">
-					<label for="avatar">Choose a profile picture</label>
+					<input type="text" placeholder = "Enter username"><br>
+					<input type="password" placeholder= "Enter password"><br>
+					<input type="password" placeholder = "Please confirm password"><br>
+					<label for="avatar">Choose a profile picture</label><br>
 					<input type="file"
 						id="avatar" name="avatar"
-						accept="image/png, image/jpeg">
+						accept="image/png, image/jpeg"><br>
 					<button>Sign up</button>
 				</div>
 			
@@ -97,7 +86,7 @@
 							href="https://www.jwpepper.com/myscore/MarkAHenry">Composer&nbsp;Mark&nbsp;A.&nbsp;Henry</a></li>
 				</ul>
 			<!--Dark Mode-->
-				<h5>id="DarkModeText">Dark Mode is ON</h5>
+				<h5><id="DarkModeText">Dark Mode is ON</h5>
 					<button onclick="darkMode()">Dark Mode</button>
 					<button onclick="lightMode()">Light Mode</button>
 				<script>
