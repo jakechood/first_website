@@ -1,5 +1,12 @@
+header, html {
+    height: 30px;
+    padding: 25px;
+    background-color: purple;
+
+}
+
 body, html {
-    margin: 5;
+    margin: 5 px;
     padding: 25px;
     background-color: #121212;
     color: #ffffff;
