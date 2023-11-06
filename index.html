@@ -27,12 +27,10 @@
 				<a href="page3.html"> Contact  </a>
 			</div>
 		</nav>
-				
-			</div>
 	</head>
 </html>
 <html>
-		<!--Open Master Head-->
+	<!--Open Master Head-->
 	<head>
 		<!-- Pag Title -->
 		<div align="center">
@@ -41,7 +39,7 @@
 			<p align="center">Developer | Artist | Retired Educator</p>
 			<!--Add Image-->
 			<div align="center">
-				<img id ="jakeprofpic"; src="Edge Profile Picture.png" width="50%";></div>
+				<img id="jake-hood-headshot"; src="Edge Profile Picture.png" width="50%";></div>
 	</head>
 		<!-- Set body -->
 		<body>			
@@ -59,72 +57,65 @@
 	</section>
 </html>
 <html>
-	
+	<body>
+		<!--SubFooter Section-->
+			<div>
+			<h3> Thank you for your interest!</h3>
+			<h4> Please feel welcome to sign up for updates as they occur!</h4>
+				<input type="text" placeholder = "Enter username"><br>
+				<input type="password" placeholder= "Enter password"><br>
+				<input type="password" placeholder = "Please confirm password"><br>
+				<label for="avatar">Choose a profile picture</label><br>
+				<input type="file"
+					id="avatar" name="avatar"
+					accept="image/png, image/jpeg"><br>
+				<button>Sign up</button>
+			</div>
+		
+		<!--Recommendation Links -->
+		<h2> I am proud to recommend the following businesses and services: </h2>
+			<ul>
+				<li style="font-family: Arial, Helvetica, sans-serif; color:#ffffff"> <a
+						href="https://www.etsy.com/shop/GloriousKnickKnacks?ref=seller-platform-mcnav&fbclid=IwAR2wdUWqrqygFJkiIdWgOznkoZHY5QEljB7KFiRFEIyZDppN3r8hBWRqt7M">Glorious&nbsp;KnickKnacks</a>
+				</li>
+				<li style="font-family: Arial, Helvetica, sans-serif; color:#ffffff"> <a
+						href="https://www.jwpepper.com/myscore/MarkAHenry">Composer&nbsp;Mark&nbsp;A.&nbsp;Henry</a></li>
+			</ul>
+		<!--Dark Mode-->
+			<h5><id="DarkModeText">Dark Mode is ON</h5>
+									
+			<script>
+				function setIsDark() {
+					const isSystemDark = window.matchMedia("(prefers=color-scheme: dark)").matches
+					const [isDark,setIsDark] = useState(isSystemDark)
+
+				}
+
+				function DarkMode() {
+					let element = document.body;
+					let content = document.getElementById("DarkModetext");
+					element.className = "dark-mode";
+					content.innerText = "Dark Mode is ON";
+				}
+
+				function LightMode() {
+					let element = document.body;
+					let content = document.getElementById("DarkModetext");
+					element.className = "light-mode";
+					content.innerText = "Dark Mode is OFF";
+				}
+
+				return(
+					<div style={isDark?DarkMode:LightMode}>
+						Hello World
+						<button onClick = {()=>setIsDark(toggle =>! toggle)}>Switch Theme</button>
 					</div>
-					<p>Hello, World!</p>
-					<script type="text/javascript" src="index.js"></script>
-				</div>
+				)
 
-			<!--SubFooter Section-->
-				<div>
-				<h3> Thank you for your interest!</h3>
-				<h4> Please feel welcome to sign up for updates as they occur!</h4>
-					<input type="text" placeholder = "Enter username"><br>
-					<input type="password" placeholder= "Enter password"><br>
-					<input type="password" placeholder = "Please confirm password"><br>
-					<label for="avatar">Choose a profile picture</label><br>
-					<input type="file"
-						id="avatar" name="avatar"
-						accept="image/png, image/jpeg"><br>
-					<button>Sign up</button>
-				</div>
-			
-			<!--Recommendation Links -->
-			<h2> I am proud to recommend the following businesses and services: </h2>
-				<ul>
-					<li style="font-family: Arial, Helvetica, sans-serif; color:#ffffff"> <a
-							href="https://www.etsy.com/shop/GloriousKnickKnacks?ref=seller-platform-mcnav&fbclid=IwAR2wdUWqrqygFJkiIdWgOznkoZHY5QEljB7KFiRFEIyZDppN3r8hBWRqt7M">Glorious&nbsp;KnickKnacks</a>
-					</li>
-					<li style="font-family: Arial, Helvetica, sans-serif; color:#ffffff"> <a
-							href="https://www.jwpepper.com/myscore/MarkAHenry">Composer&nbsp;Mark&nbsp;A.&nbsp;Henry</a></li>
-				</ul>
-			<!--Dark Mode-->
-				<h5><id="DarkModeText">Dark Mode is ON</h5>
-										
-				<script>
-					function setIsDark() {
-						const isSystemDark = window.matchMedia("(prefers=color-scheme: dark)").matches
-						const [isDark,setIsDark] = useState(isSystemDark)
+			</script>
 
-					}
-
-					function DarkMode() {
-						let element = document.body;
-						let content = document.getElementById("DarkModetext");
-						element.className = "dark-mode";
-						content.innerText = "Dark Mode is ON";
-					}
-
-					function LightMode() {
-						let element = document.body;
-						let content = document.getElementById("DarkModetext");
-						element.className = "light-mode";
-						content.innerText = "Dark Mode is OFF";
-					}
-
-					return(
-						<div style={isDark?DarkMode:LightMode}>
-							Hello World
-							<button onClick = {()=>setIsDark(toggle =>! toggle)}>Switch Theme</button>
-						</div>
-					)
-
-				</script>
-
-		<!-- Close body -->
-		</body>
-	<!--Close Master Head-->
-	</head>
+	<!-- Close body -->
+	</body>
 
 <!-- Close HTML -->
 </html>
