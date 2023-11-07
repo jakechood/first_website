@@ -17,9 +17,22 @@ nav, html {
 
 .dropbtn:hover {
     font-style:bold;
+    display:block;
 } 
 
+.dropdown {
+    position: left
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+}
+
+.dropdown-content:hover {
+    display: block
+}
 
 body, html {
     margin: 5 px;
