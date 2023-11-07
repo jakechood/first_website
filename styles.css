@@ -31,12 +31,8 @@ nav, html {
 
 }
 
-.dropdown-content:hover {
+.dropdown-content:hover, .dropdown-content:active {
     display: all;
-}
-
-.dropdown-content:hover {
-    display: block
 }
 
 body, html {
