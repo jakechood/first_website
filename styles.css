@@ -5,6 +5,7 @@ nav, html {
 
 }
 
+
 .dropbtn{
     background-color: purple;
     padding: 5px;
@@ -16,7 +17,7 @@ nav, html {
 
 }
 
-.dropbtn:hover {
+.navigation-menu:hover {
     font-style:bold;
     display:block;
 } 
@@ -25,11 +26,16 @@ nav, html {
     position: left
 }
 
-.dropdown-content {
+.dropdown-content:hover {
+    display: contents;
+}
+
+.dropdown-content:hover:not(.active) {
     display: none;
     position: absolute;
 
 }
+
 
 .dropdown-content:hover, .dropdown-content:active {
     display: all;
